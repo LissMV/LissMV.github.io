@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'HarysWorld';
+  src: url('/src/assets/fonts/Harys-World.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('/src/assets/fonts/Afacad-VariableFont_wght.ttf') format('truetype');
+}
+
 @theme {
   --color-turquesa: #2AC984;
   --color-cyan: #338B85;
@@ -7,4 +17,8 @@
   --color-gris-claro: #CDCACA;
   --color-aqua-claro: #54C3BB;
   --color-violeta: #6B2188;
+
+
+  --font-harys: "HarysWorld", sans-serif;
+  --font-afacad: "Afacad", sans-serif;
 }
