@@ -10,6 +10,16 @@
   src: url('/src/assets/fonts/Afacad-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Sundori';
+  src: url('/src/assets/fonts/Sundori.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Abhaya';
+  src: url('/src/assets/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
+}
+
 @theme {
   --color-turquesa: #2AC984;
   --color-cyan: #338B85;
@@ -21,4 +31,6 @@
 
   --font-harys: "HarysWorld", sans-serif;
   --font-afacad: "Afacad", sans-serif;
+  --font-sundori: "Sundori", sans-serif;
+  --font-abhaya: "Abhaya", sans-serif;
 }
