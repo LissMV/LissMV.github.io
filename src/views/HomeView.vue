@@ -36,15 +36,15 @@
 
   <div class="mt-12 relative">
     <div class="absolute bg-black/65 w-full h-[62px] mt-8 flex items-center">
-      <h1
+      <h1 id="about-me"
         class="pl-[339px] font-harys text-[65px] font-bold bg-gradient-to-b from-violeta from-[32.21%] to-aqua-claro to-[64.42%] bg-clip-text mt-2 text-transparent">
         About me
       </h1>
     </div>
-    <div class="">
-      <img src="@/assets/img/home/about-me.png" alt="About me collage" class="w-full"></img>
+
+      <img src="@/assets/img/home/about-me.png" class="w-full"></img>
       <div class="absolute inset-0 bg-black/30"></div>
-    </div>
+
 
     <img src="@/assets/img/home/me.png" alt="Lisseth profile"
       class="absolute right-20 w-[367px] h-[406px] bottom-8 translate-y-[150px]"></img>
@@ -97,6 +97,8 @@ import Carousel9 from '@/assets/img/home/carousel9.png';
 import Carousel10 from '@/assets/img/home/carousel10.png';
 import Carousel11 from '@/assets/img/home/carousel11.png';
 import Carousel12 from '@/assets/img/home/carousel12.png';
+import { onMounted } from 'vue';
+import { pendingHash } from '@/stores/hashStore';
 
 
 const handleDownloadResume = () => {
@@ -109,5 +111,14 @@ const handleDownloadResume = () => {
 const carouselImages = [
   Carousel1, Carousel2, Carousel3, Carousel4, Carousel5, Carousel6, Carousel7, Carousel8, Carousel9, Carousel10, Carousel11, Carousel12
 ];
+
+onMounted(() => {
+  if (pendingHash.value) {
+    const el = document.querySelector(pendingHash.value);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+
+    pendingHash.value = ''; // limpiar
+  }
+});
 </script>
 
