@@ -18,7 +18,7 @@ const navItems = [
   { id: 'about', icon: IconAboutMe, route: '#about-me' },
   { id: 'volunteer', icon: IconVolunteer, route: '/volunteer' },
   { id: 'courses', icon: IconCourses, route: '/courses' },
-  { id: 'projects', icon: IconProjects, route: '/projects' },
+  { id: 'projects', icon: IconProjects, route: null },
 ];
 
 const handleClick = async (id: string, route: string) => {

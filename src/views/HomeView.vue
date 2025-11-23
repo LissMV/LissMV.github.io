@@ -42,8 +42,8 @@
       </h1>
     </div>
 
-      <img src="@/assets/img/home/about-me.png" class="w-full"></img>
-      <div class="absolute inset-0 bg-black/30"></div>
+    <img src="@/assets/img/home/about-me.png" class="w-full"></img>
+    <div class="absolute inset-0 bg-black/30"></div>
 
 
     <img src="@/assets/img/home/me.png" alt="Lisseth profile"
@@ -74,8 +74,81 @@
       Tecla, where I have had the opportunity to be president of the student government.</h1>
   </div>
 
-    <div class="mt-20 mr-[125px] ml-[250px]">
+  <div class="mt-20 mr-[125px] ml-[250px]">
     <Carousel :images="carouselImages" />
+  </div>
+  <div class="ml-[300px] mt-[29px]">
+    <h1
+      class="font-harys text-[65px] font-bold bg-gradient-to-b from-aqua-claro from-0% to-violeta bg-clip-text text-transparent leading-tight">
+      My skills
+    </h1>
+  </div>
+
+  <section class="pt-12 space-y-24">
+    <div class="relative flex items-center">
+      <img src="@/assets/img/home/skill1.png" class="w-[283px] object-cover absolute left-[520px]" />
+      <div class="flex justify-end w-full">
+        <div class="w-[580px] h-[190px] bg-gradient-to-b from-turquesa from-15% to-violeta to-75%">
+          <h3 class="font-afacad font-bold text-[40px] text-white text-center">Leadership</h3>
+          <p class="font-afacad text-[23px] text-white mt-1 text-center px-20 pl-12">
+            I have the ability to be a leader, I seek to positively influence my classmates and take initiative in
+            projects to move them forward.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex items-center">
+      <img src="@/assets/img/home/skill2.png" class="w-[283px] object-cover absolute left-[670px]" />
+      <div class="w-full">
+        <div class="w-[710px] h-[190px] bg-gradient-to-b from-turquesa from-15% to-violeta to-75% pl-[165px]">
+          <h3 class="font-afacad font-bold text-[40px] text-white text-center pt-5">Creativity</h3>
+          <p class="font-afacad text-[23px] text-white mt-1 text-center px-20">
+            I like to create, innovate, and look for ways to bring an idea to life.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex items-center">
+      <img src="@/assets/img/home/skill3.png" class="w-[283px] object-cover absolute left-[520px]" />
+      <div class="flex justify-end w-full">
+        <div class="w-[580px] h-[190px] bg-gradient-to-b from-turquesa from-15% to-violeta to-75%">
+          <h3 class="font-afacad font-bold text-[40px] text-white text-center mr-8 pt-5">Organizational skills</h3>
+          <p class="font-afacad text-[23px] text-white mt-1 text-center px-20 mr-8">
+            I can organize activities and projects and carry them out in the best possible way.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex items-center">
+      <img src="@/assets/img/home/skill4.png" class="w-[283px] object-cover absolute left-[670px]" />
+      <div class="w-full">
+        <div class="w-[710px] h-[190px] bg-gradient-to-b from-turquesa from-15% to-violeta to-75% pl-[165px]">
+          <h3 class="font-afacad font-bold text-[40px] text-white text-center pr-6">Computer skills</h3>
+          <p class="font-afacad text-[23px] text-white mt-1 text-center px-12 mr-6">
+            I like using computers and seeing how technology advances. I know how to program and have knowledge of web
+            development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex items-center">
+      <img src="@/assets/img/home/skill5.png" class="w-[283px] object-cover absolute left-[520px]" />
+      <div class="flex justify-end w-full">
+        <div class="w-[580px] h-[190px] bg-gradient-to-b from-turquesa from-15% to-violeta to-75%">
+          <h3 class="font-afacad font-bold text-[40px] text-white text-center mr-8">Resilience</h3>
+          <p class="font-afacad text-[23px] text-white mt-1 text-center px-20 mr-8">
+            I can overcome the obstacles I face on my path, I look for ways to move forward despite adversity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mb-14">
+    <h2>.</h2>
   </div>
 </template>
 
@@ -117,8 +190,7 @@ onMounted(() => {
     const el = document.querySelector(pendingHash.value);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
 
-    pendingHash.value = ''; // limpiar
+    pendingHash.value = '';
   }
 });
 </script>
-

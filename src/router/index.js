@@ -19,9 +19,24 @@ const router = createRouter({
       component: () => import('../views/VolunteerWorkView.vue')
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjectsView.vue')
+      path: '/expo-tech',
+      name: 'expo-tech',
+      component: () => import('../views/ExpoTechView.vue')
+    },
+    {
+      path: '/expo',
+      name: 'expo',
+      component: () => import('../views/ExpoView.vue')
+    },
+    {
+      path: '/hackathon',
+      name: 'hackathon',
+      component: () => import('../views/HackathonView.vue')
+    },
+    {
+      path: '/thesis',
+      name: 'thesis',
+      component: () => import('../views/ThesisView.vue')
     },
   ],
 })
