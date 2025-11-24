@@ -5,7 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: './',
+  base: '/LissMV.github.io/',
   plugins: [
     vue(),
     vueDevTools(),
